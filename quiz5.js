@@ -96,17 +96,22 @@ function car(dist){
     distance = dist;
     console.log(`설정한 주행거리는 ${dist} 입니다`)
 }
+
+
+// 실행
+
 car(41);
+
+car(39)
 carFunction.powerOnOff();
-car(30);
 carFunction.drive(10);
 carFunction.powerOnOff();
 carFunction.drive(10);
 carFunction.powerOnOff();
 carFunction.drive(10);
 carFunction.drive(15);
-carFunction.drive(5);
-carFunction.drive(5);
+carFunction.drive(4);
+// carFunction.drive(5);
 
 
 

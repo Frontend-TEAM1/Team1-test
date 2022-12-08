@@ -13,7 +13,7 @@ console.log (a)
 const a = [11, 22, 33, 44, 55];
 function quizArray(arr, num){
     const arrPlus = arr.map((item) => item+10);
-    console.log(arrPlus);
+    // console.log(arrPlus);
 
     // num이 존재하면 num값의 인덱스를 저장 (없다면 -1이 저장)
     const index = arrPlus.findIndex((item)=> item === num);
@@ -26,4 +26,6 @@ function quizArray(arr, num){
     }
 }
 
+
+// 실행
 quizArray(a, 54);   // [ 21, 32, 43, 54, 65 ]   =>  [ 21, 32, 43, 65 ]

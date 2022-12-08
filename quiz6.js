@@ -45,7 +45,7 @@ function lockerAssign(number, pw){
 }
 
 // 라커 이용 함수
-function locekrUse(number, pw){
+function lockerUse(number, pw){
     let index = lockerManage.findIndex((item)=>item.number === number);
     if(index === -1) return console.log('배정받지 않은 사물함입니다. 사물함배정 받은뒤에 이용해주세요');
     if(lockerManage[index].password === pw && lockerManage[index].number === number) return console.log(`${number}번 사물함이 열렸습니다!`);
@@ -64,16 +64,28 @@ function lockerRemove(number, pw){
     }
 }
 
-
-showLocker();
-lockerAssign(50, 1234);
-lockerAssign(40, 12);
-showLocker();
-lockerAssign(5, 1234);
-showLocker();
-console.log(lockerManage);
-locekrUse(5, 1234);
 console.log(locker);
-lockerRemove(5, 1234);
-console.log(locker);
-showLocker();
+// showLocker();
+// lockerAssign(88, 014);
+// lockerAssign(77, 5678);
+// lockerAssign(66, 5678);
+// lockerAssign(55, 5678);
+// lockerAssign(44, 5678);
+// lockerAssign(33, 5678);
+// lockerAssign(22, 5678);
+// lockerAssign(11, 5678);
+// showLocker();
+// lockerUse(88, 014);
+// lockerRemove(88, 014);
+// showLocker();
+// lockerAssign(50, 1234);
+// lockerAssign(40, 12);
+// showLocker();
+// lockerAssign(5, 1234);
+// showLocker();
+// console.log(lockerManage);
+// lockerUse(5, 1234);
+// console.log(locker);
+// lockerRemove(5, 1234);
+// console.log(locker);
+// showLocker();

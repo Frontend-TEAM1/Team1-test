@@ -30,9 +30,18 @@ const food = {
     샌드위치: 10,
 }
 
+
+const keyArr = [];
+for(let key in food){
+    keyArr.push(key);
+}
+console.log(keyArr);
+
+
+
 // 전산표 키값들 Object.key로 접근한뒤 맵으로 새로운 배열을 리턴하여 foodkey에 저장(파라미터에 키값이없을때 예외처리를 위해)
 const foodkey = Object.keys(food)
-
+console.log(foodkey);
 // 전산체크 함수
 function check(foodname, count){
     // 제품이 전산표에 없는경우 undefined을 저장
